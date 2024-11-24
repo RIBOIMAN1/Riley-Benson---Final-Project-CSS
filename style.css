@@ -6,7 +6,11 @@ body, h1, h2, ul, li, a {
 
 body {
     background: radial-gradient(circle, rgb(0,0,0), rgb(40,0,40)); /* Gradient dark purple background */
-} /* Gives the body of the website a dark purple and black radial gradient background */
+    max-width: 700px; /* Sets the max width of the webpage to 700px for easier readability */
+    margin: 0 auto; /* Centers the webpage horizontally */
+    overflow-wrap: break-word; /* Automatically breaks larger words so that they stay within the 700px width */
+    padding: 20px; /* Adds padding (gaps) of 20px both horizontally and vertically to the webpage */
+} /* Gives the body of the website a dark purple and black radial gradient background, a max width of 700px, horizontal centering, and a padding of 20px */
 
 h1 {
     color: cyan; /* Cyan color for the text */
@@ -189,3 +193,11 @@ a:hover {
 img {
     border-radius: 10px; /* Applies a 10px radius for borders of images to create rounded corners */
 }
+
+p {
+    color: white; /* Applies a white text color */
+} /* Adds white text color to <p> elements */
+
+header {
+    text-align: center; /* Aligns text to the center */
+} /* Center aligns text that is part of the <header> element */
