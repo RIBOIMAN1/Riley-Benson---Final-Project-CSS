@@ -6,7 +6,12 @@ body, h1, h2, ul, li, a {
 
 body {
     background: radial-gradient(circle, rgb(0,0,0), rgb(40,0,40)); /* Gradient dark purple background */
-} /* Gives the body of the website a dark purple and black radial gradient background */
+    max-width: 1400px; /* Sets the max width of the webpage to 1400px for easier readability */
+    margin: 0 auto; /* Centers the webpage horizontally */
+    overflow-wrap: break-word; /* Automatically breaks larger words so that they stay within the 700px width */
+    padding: 20px; /* Adds padding (gaps) of 20px both horizontally and vertically to the webpage */
+    line-height: 1.5; /* Sets the line height to 1.5 for slightly more spacing between each line */
+} /* Gives the body of the website a dark purple and black radial gradient background, a max width of 1400px, horizontal centering, a padding of 20px, and a line height of 1.5 */
 
 h1 {
     color: cyan; /* Cyan color for the text */
@@ -43,7 +48,8 @@ a {
     padding: 5px 10px; /* 5px vertical padding, 10px horizontal padding */
     border: 3px solid #00FFFF; /* A 3px solid cyan colored border around links */
     transition: all 0.3s ease; /* Used for a gradual color changing transition for hover effects */
-} /* Makes <a> elements have cyan border and yellow font with an animation transition */
+    text-indent: 0; /* Removes text indent for links inside <p> */
+} /* Makes <a> elements have cyan border and yellow font with an animation transition, and also ensures that links never get indented */
 
 a:hover {
     background-color: green; /* Green background for links when hovering */
@@ -189,3 +195,12 @@ a:hover {
 img {
     border-radius: 10px; /* Applies a 10px radius for borders of images to create rounded corners */
 }
+
+p {
+    color: white; /* Applies a white text color */
+    text-indent: 20px; /* Added a 20px text indent to the beginning of paragraphs */
+} /* Adds white text color to <p> elements and indents the beginning of paragraphs by 20px */
+
+header {
+    text-align: center; /* Aligns text to the center */
+} /* Center aligns text that is part of the <header> element */
