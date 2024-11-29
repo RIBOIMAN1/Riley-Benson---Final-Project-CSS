@@ -5,16 +5,25 @@ body, h1, h2, ul, li, a {
 } /* Removes default margining and padding and sets the font families for the webpage, applying to <body>, <h1>, <h2>, <ul>, <li>, and <a> elements */
 
 body {
-    background-image: url('images/HTMLCSSBackground.png');
-    background-size: 100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed; /* Keeps the background image fixed */
+    background-image: url('images/HTMLCSSBackground.png'); /* Sets a background image for the entire page */
+    background-size: 100%; /* Makes the background image cover 100% of the container's width */
+    background-repeat: repeat-y; /* Repeats the background image vertically */
+    animation: scrollBackground 30s linear infinite; /* Animates the background on a loop */
     max-width: 1400px; /* Sets the max width of the webpage to 1400px for easier readability */
     margin: 0 auto; /* Centers the webpage horizontally */
     overflow-wrap: break-word; /* Automatically breaks larger words so that they stay within the 1400px width */
     padding: 20px; /* Adds padding (gaps) of 20px both horizontally and vertically to the webpage */
     line-height: 1.5; /* Sets the line height to 1.5 for slightly more spacing between each line */
 } /* Gives the body of the website a dark purple and black radial gradient background, a max width of 1400px, horizontal centering, a padding of 20px, and a line height of 1.5 */
+
+@keyframes scrollBackground {
+    0% {
+        background-position: center -20px; /* Ensures the starting position is consistently 20px down */
+    }
+    100% {
+        background-position: center calc(100% + 20px); /* Moves the background image to the end position adjusted by +20px */
+    }
+}
 
 h1 {
     color: black; /* Black color for the text */
@@ -56,6 +65,10 @@ a:hover {
     color: cyan; /* Cyan text color for links when hovering */
 } /* Adds black background, black font, and black border when hovering over <a> elements */
 
+a:visited {
+    color: #660066; /* Sets a slightly dark purple color for visited links */
+}
+
 .center-text {
     text-align: center; /* Gives center alignment for text */
 } /* Centers-aligns text */
@@ -73,7 +86,7 @@ a:hover {
 
 .img100 {
     height: auto; /* Automatically adjusts the height of images to maintain the aspect ratio */
-    width: 100% /* Makes images 100% of the width of the element it is contained in */
+    width: 100%; /* Makes images 100% of the width of the element it is contained in */
 } /* Makes images 100% of the width of the browser window or element */
 
 .BorderedTextDashed {
@@ -212,7 +225,7 @@ header {
 
 .intro {
     grid-column: span 2; /* Makes intro span two columns */
-} /*  */
+} /* Ensures the intro element spans across two grid columns */
 
 .preamble {
     display: grid; /* Creates a grid within the preamble */
@@ -229,17 +242,17 @@ header {
     display: grid; /* Creates a grid for main supporting content */
     grid-template-columns: repeat(3, 1fr); /* Divides into 3 equal columns */
     gap: 10px; /* Adds spacing between grid items */
-} /* Makes the "supporting" class within  */
+} /* Creates a grid for supporting content with 3 equal columns and spacing between items */
 
 .main.supporting > div {
     grid-column: span 1; /* Each section takes one column */
-} /* Creates a grid display layout,  */
+} /* Makes each direct child div of .main.supporting occupy a single grid column */
 
 .main.supporting h3 {
     grid-column: span 3; /* Headers span 3 columns */
-} /*  */
+} /* Made <h3> elements within the ".main.supporting" classes take 3 columns */
 
 .requirements {
     grid-column: 2; /* Places sidebar in the second column */
     grid-row: 2 / span 2; /* Spans multiple rows */
-} /*  */
+} /* Made the "requirements" class place a sidebar in the second column and take multiple rows */
