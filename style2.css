@@ -36,7 +36,6 @@ h3 {
 
 ul {
     list-style-type: none; /* Removes bullet points */
-    margin-left: 20px; /* Gives a left margin (gap) of 20px */
     margin-bottom: 12px; /* Gives a bottom margin (gap) of 12px */
 } /* Defines no list type and margins for unordered list */
 
@@ -46,18 +45,15 @@ ul li {
 
 a {
     display: inline-block; /* Applies inline blocking to image */
-    color: black; /* Black color for the text */
-    text-decoration: none; /* Removes the underlining from links */
-    padding: 5px 10px; /* 5px vertical padding, 10px horizontal padding */
-    border: 3px solid black; /* A 3px solid black border around links */
+    color: #0000CC; /* Slightly dark blue color for the text */
+    text-decoration: underline; /* Removes the underlining from links */
     transition: all 0.3s ease; /* Used for a gradual color changing transition for hover effects */
     text-indent: 0; /* Removes text indent for links inside <p> */
 } /* Makes <a> elements have black border and black font with an animation transition, and also ensures that links never get indented */
 
 a:hover {
-    background-color: black; /* Black background for links when hovering */
-    color: black; /* Black text color for links when hovering */
-    border: 3px solid black; /* Black border color for links when hovering */
+    background-color: rgb(127.5,0,0); /* Dark red background for links when hovering */
+    color: cyan; /* Cyan text color for links when hovering */
 } /* Adds black background, black font, and black border when hovering over <a> elements */
 
 .center-text {
@@ -207,3 +203,43 @@ p {
 header {
     text-align: center; /* Aligns text to the center */
 } /* Center aligns text that is part of the <header> element */
+
+.page-wrapper {
+    display: grid; /* Creates a grid container for page layout */
+    grid-template-columns: 1fr; /* Applies a grid template to the page */
+    gap: 20px; /* Adds spacing between grid items */
+} /* Creates a grid display layout, uses a grid template of 1fr, and adds spacing between grid items */
+
+.intro {
+    grid-column: span 2; /* Makes intro span two columns */
+} /*  */
+
+.preamble {
+    display: grid; /* Creates a grid within the preamble */
+    grid-template-columns: repeat(3, 1fr); /* Divides preamble into 3 equal-width columns */
+    gap: 10px; /* Adds spacing of 10px between grid items */
+    grid-column: span 2; /* Ensures preamble spans both main columns */
+} /* Creates a grid display layout, uses a grid template of 3 equal width 1fr-sized columns, adds a small amount of spacing between grid items, and makes the preamble span two columns */
+
+.preamble h3 {
+    grid-column: span 3; /* Makes the header span three columns */
+} /* Makes the <h3> elements within the "preamble" class have a column spanning of 3 */
+
+.main.supporting {
+    display: grid; /* Creates a grid for main supporting content */
+    grid-template-columns: repeat(3, 1fr); /* Divides into 3 equal columns */
+    gap: 10px; /* Adds spacing between grid items */
+} /* Makes the "supporting" class within  */
+
+.main.supporting > div {
+    grid-column: span 1; /* Each section takes one column */
+} /* Creates a grid display layout,  */
+
+.main.supporting h3 {
+    grid-column: span 3; /* Headers span 3 columns */
+} /*  */
+
+.requirements {
+    grid-column: 2; /* Places sidebar in the second column */
+    grid-row: 2 / span 2; /* Spans multiple rows */
+} /*  */
