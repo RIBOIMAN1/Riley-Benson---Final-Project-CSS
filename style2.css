@@ -23,7 +23,7 @@ body {
     100% {
         background-position: center calc(100% + 20px); /* Moves the background image to the end position adjusted by +20px */
     }
-}
+} /* Defines an animation keyframe for scrolling the background vertically */
 
 h1 {
     color: black; /* Black color for the text */
@@ -53,9 +53,9 @@ ul li {
 } /* Bottom margin for <ul> and <li> elements */
 
 a {
-    display: inline-block; /* Applies inline blocking to image */
+    display: inline-block; /* Applies inline blocking to links */
     color: #0000CC; /* Slightly dark blue color for the text */
-    text-decoration: underline; /* Removes the underlining from links */
+    text-decoration: underline; /* Adds the underlining to links */
     transition: all 0.3s ease; /* Used for a gradual color changing transition for hover effects */
     text-indent: 0; /* Removes text indent for links inside <p> */
 } /* Makes <a> elements have black border and black font with an animation transition, and also ensures that links never get indented */
@@ -206,7 +206,7 @@ a:visited {
 
 img {
     border-radius: 10px; /* Applies a 10px radius for borders of images to create rounded corners */
-}
+} /* Adds rounded 10px corners to all images */
 
 p {
     color: black; /* Applies a black text color */
@@ -256,3 +256,28 @@ header {
     grid-column: 2; /* Places sidebar in the second column */
     grid-row: 2 / span 2; /* Spans multiple rows */
 } /* Made the "requirements" class place a sidebar in the second column and take multiple rows */
+
+::selection {
+    background: rgba(0, 127.5, 0, 0.5); /* Applies a semi-transparent dark green background to selected text */
+} /* Defines a semi-transparent dark green color for selected text elements */
+
+h1::selection {
+    background: rgba(127.5,127.5,0,0.5); /* Applies a semi-transparent dark yellow background to selected <h1> text */
+} /* Defines a semi-transparent dark yellow color for selected <h1> text */
+
+h2::selection {
+    background:rgba(0, 0, 127.5, 0.5); /* Applies a semi-transparent dark blue background to selected <h2> text */
+} /* Defines a semi-transparent dark green color for selected <h2> text */
+
+h3::selection {
+    background: hsla(0, 100%, 25%, 0.5); /* Applies a 50% transparent dark red background to selected <h3> text */
+}
+
+h1 abbr::selection,
+h2 abbr::selection,
+h3 abbr::selection,
+h4 abbr::selection,
+h5 abbr::selection,
+h6 abbr::selection {
+    background: hsla(240, 100%, 25%, 0.5); /* Applies a 50% transparent dark blue background to abbreviation elements within headings */
+} /* Makes any <abbr> element within an <h'X'> element have a semi-transparent dark blue background */
