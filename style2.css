@@ -9,13 +9,13 @@ body {
     background-image: url('images/HTMLCSSBackground.png'); /* Sets a background image for the entire page */
     background-size: 100%; /* Makes the background image cover 100% of the container's width */
     background-repeat: repeat-y; /* Repeats the background image vertically */
-    animation: scrollBackground 30s linear infinite; /* Animates the background on a loop */
+    animation: scrollBackground 30s linear infinite; /* Animates the background on a loop with a speed of 30s */
     max-width: 1400px; /* Sets the max width of the webpage to 1400px for easier readability */
     margin: 0 auto; /* Centers the webpage horizontally */
     overflow-wrap: break-word; /* Automatically breaks larger words so that they stay within the 1400px width */
     padding: 20px; /* Adds padding (gaps) of 20px both horizontally and vertically to the webpage */
     line-height: 1.5; /* Sets the line height to 1.5 for slightly more spacing between each line */
-} /* Gives the body of the website a light  background, a max width of 1400px, horizontal centering, a padding of 20px, and a line height of 1.5 */
+} /* Gives the body of the website a light gray background, a background image, a background size of 100%, a background repeat across the y-axis, a scrolling background, a max width of 1400px, horizontal centering, a padding of 20px, and a line height of 1.5 */
 
 @keyframes scrollBackground {
     0% {
@@ -68,146 +68,7 @@ a:hover {
 
 a:visited {
     color: #660066; /* Sets a slightly dark purple color for visited links */
-}
-
-.center-text {
-    text-align: center; /* Gives center alignment for text */
-} /* Centers-aligns text */
-
-.center-image {
-    display: block; /* Makes image a block element */
-    margin-left: auto; /* Automatically adjusts leftwards margin for images */
-    margin-right: auto; /* Automatically adjusts rightwards margin for images */
-} /* Center-aligns images */
-
-.img30 {
-    height: auto; /* Automatically adjusts the height of images to maintain the aspect ratio */
-    width: 30%; /* Makes images 30% of the width of the element it is contained in */
-} /* Makes images 30% of the width of the browser window or element */
-
-.img100 {
-    height: auto; /* Automatically adjusts the height of images to maintain the aspect ratio */
-    width: 100%; /* Makes images 100% of the width of the element it is contained in */
-} /* Makes images 100% of the width of the browser window or element */
-
-.BorderedTextDashed {
-    border: 10px dashed black; /* Dashed black border with a thickness of 10px */
-} /* Border that is a dashed line and is a black color */
-
-.BorderedTextRounded {
-    border: 10px solid black; /* Solid black border with a thickness of 10px */
-    border-radius: 50%; /* Rounds borders to a circular shape with 50% radius */
-} /* Border that is rounded and is a black color */
-
-.GreenBorderedTextRounded {
-    border: 5px solid black; /* Solid black border with a thickness of 5px */
-    border-radius: 50%; /* Rounds borders to a circular shape with 50% radius */
-} /* Border that is rounded and is a black color */
-
-.TableDesign {
-    border: 5px ridge black; /* Ridged black border with a thickness of 5px */
-    color: black; /* Black color for the text */
-    width: 100%; /* 100% width of the parent element for tables */
-    text-align: center; /* Gives center alignment for text */
-    font-size: 1em; /* Multiplies the font size of text by 1 */
-    margin-bottom: 1em; /* Multiplies the space at the bottom of the element by 1 */
-} /* Border for tables that is ridged and is a black color with black text */
-
-.bold {
-    font-weight: bold; /* Gives a bold thickness to text */
-} /* Bolds text */
-
-.GreenYellowFont {
-    color: black; /* Black color for the text */
-} /* Applies a black text color */
-
-#footer {
-    color: black; /* Black color for the text */
-    overflow: auto; /* Adds scroll bars if the contents overflow */
-} /* Makes scrollbars appear if the content overflows the viewport */
-
-.video-background {
-    position: fixed; /* Makes the background stay in place regardless of what happens on the webpage */
-    top: 0; /* Aligns background to the top */
-    left: 0; /* Aligns background to the left */
-    width: 100%; /* Makes background take 100% of the width of the page */
-    height: 100%; /* Makes background take 100% of the height of the page */
-    z-index: -1; /* Sends video background behind the rest of the elements */
-    overflow: auto; /* Adds scrollbars to the page if the contents overflow */
-} /* Makes videos fullscreen, behind the main text, and enables scrollbars */
-
-.video-background video {
-    min-width: 100%; /* Makes the minimum width of the background video 100% */
-    min-height: 100%; /* Makes the minimum height of the background video 100% */
-    width: auto; /* Automatically adjusts the width of the video background */
-    height: auto; /* Automatically adjusts the height of the video background */
-    position: absolute; /* Places the background relative to the container it's in */
-    top: 50%; /* Centers video background vertically */
-    left: 50%; /* Centers video background horizontally */
-    transform: translate(-50%, -50%); /* Centers video background horizontally and vertically using transform */
-    filter: brightness(0.25); /* Darkens video background to 25% brightness for better readability */
-} /* Centers video backgrounds, applies minimum width and height to be fullscreen, and applies 25% background brightness for better readability */
-
-.h2Underline {
-    text-decoration: underline; /* Gives underlining to text */
-} /* Underlines <h2> elements */
-
-.ImageGap {
-    display: flex; /* Gives flexbox properties for layout */
-    justify-content: space-between; /* Evenly distributes space between pictures (gives the gaps) */
-    align-items: center; /* Aligns images to center vertically with each other side by side */
-    padding-bottom: 20px; /* Adds padding (gap) that is 20px long to the bottom of image */
-} /* Applies horizontal gaps across the page and creates small gaps on the bottom of images */
-
-.MiniImageBackground {
-    width: auto; /* Automatically adjusts the width of the mini image background */
-    height: auto; /* Automatically adjusts the height of the mini image background */
-    top: 50%; /* Centers mini image background vertically */
-    left: 50%; /* Centers mini image background horizontally */
-    transform: translate(-50%, -50%); /* Centers mini image background horizontally and vertically using transform */
-    filter: brightness(0.5); /* Darkens mini image background to 50% brightness for better readability */
-    position: fixed; /* Makes the background stay in place regardless of what happens on the webpage */
-    z-index: -1; /* Sends mini image background behind the rest of the elements */
-    overflow: auto; /* Adds scrollbars to the page if the contents overflow */
-} /* Applies an unaltered sized image with 50% brightness for better readability, and is designed to let the standard color CSS background form around it */
-
-.iframeSize {
-    width: 30%; /* Sets the width of embed YouTube video windows to 30% of their parent element */
-    max-width: 640px; /* Sets the max width of embed YouTube video windows to 640px */
-    height: 360px; /* Sets the height of embed YouTube video windows to 360px */
-    border: 0px; /* Ensures that there are no borders around embed YouTube video windows */
-} /* Adjusts the width and height of embed YouTube video windows */
-
-.SmallBottomPadding {
-    padding-bottom: 5px; /* Applies a small amount of bottom padding (a gap), being 5px */
-} /* Applies a very small amount of bottom padding (a gap) on the bottom of elements, being 5px */
-
-.SmallTopPadding {
-    padding-top: 10px; /* Applies a small amount of top padding (a gap), being 10px */
-} /* Applies a very small amount of bottom padding (a gap) on the bottom of elements, being 10px */
-
-.BottomPadding {
-    padding-bottom: 20px; /* Adds padding (gap) that is 20px long to the bottom of element */
-} /* Applies a medium sized gap to the bottom of elements */
-
-.BulletUnorderedList {
-    list-style-type: disc; /* Defined bullet type as disc */
-    color: black; /* Black color for the text */
-    font-size: 1.15em; /* Multiplies the size of the font by 1.15 */
-    margin-bottom: 1em; /* Multiplies the space at the bottom of the bulleted list by 1 */
-} /* Applied disc-style bullets, the black text color, and font size and spacing adjustments to unordered lists */
-
-.BrightnessText80 {
-    filter: brightness(0.8); /* Applies 80% brightness to text in order to give text around it better contrast */
-} /* Applies 80% brightness to text */
-
-.ThinBorder {
-    border: 1px solid black; /* Solid very thin black border with a thickness of 1px */
-} /* Applies a very thin solid border with the black color to images */
-
-img {
-    border-radius: 10px; /* Applies a 10px radius for borders of images to create rounded corners */
-} /* Adds rounded 10px corners to all images */
+} /* Makes any links the user has visited on the webpage contain a slightly dark purple text color */
 
 p {
     color: black; /* Applies a black text color */
@@ -226,7 +87,7 @@ header {
 
 .intro {
     grid-column: span 1; /* Makes intro span one column */
-} /* Ensures the intro element spans across two grid columns */
+} /* Ensures the intro element spans across one grid column */
 
 .summary {
     display: flex; /* Gives flexbox properties for layout */
@@ -273,14 +134,9 @@ h3::selection {
     background: hsla(0, 100%, 25%, 0.5); /* Applies a 50% transparent dark red background to selected <h3> text */
 } /* Defines a semi-transparent dark red color for selected <h3> text */
 
-h1 abbr::selection,
-h2 abbr::selection,
-h3 abbr::selection,
-h4 abbr::selection,
-h5 abbr::selection,
-h6 abbr::selection {
+h2 abbr::selection {
     background: hsla(240, 100%, 25%, 0.6); /* Applies a 40% transparent dark blue background to abbreviation elements within headings */
-} /* Makes any <abbr> element within an <h'X'> element have a semi-transparent dark blue background */
+} /* Makes any <abbr> element within an <h2> element have a semi-transparent dark blue background */
 
 p abbr::selection {
     background-color: rgba(0,127.5,0,0.7); /* Applies a 30% transparent dark blue background to abbreviation elements within headings */
