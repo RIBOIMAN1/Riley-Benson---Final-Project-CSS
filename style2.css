@@ -5,7 +5,7 @@ body, h1, h2, ul, li, a {
 } /* Removes default margining and padding and sets the font families for the webpage, applying to <body>, <h1>, <h2>, <ul>, <li>, and <a> elements */
 
 body {
-    background-color: #CACAC9;
+    background-color: #CACAC9; /* Sets a dark grayish background color for the body */
     background-image: url('images/HTMLCSSBackground.png'); /* Sets a background image for the entire page */
     background-size: 100%; /* Makes the background image cover 100% of the container's width */
     background-repeat: repeat-y; /* Repeats the background image vertically */
@@ -15,7 +15,7 @@ body {
     overflow-wrap: break-word; /* Automatically breaks larger words so that they stay within the 1400px width */
     padding: 20px; /* Adds padding (gaps) of 20px both horizontally and vertically to the webpage */
     line-height: 1.5; /* Sets the line height to 1.5 for slightly more spacing between each line */
-} /* Gives the body of the website a dark purple and black radial gradient background, a max width of 1400px, horizontal centering, a padding of 20px, and a line height of 1.5 */
+} /* Gives the body of the website a light  background, a max width of 1400px, horizontal centering, a padding of 20px, and a line height of 1.5 */
 
 @keyframes scrollBackground {
     0% {
@@ -64,7 +64,7 @@ a {
 a:hover {
     background-color: rgb(127.5,0,0); /* Dark red background for links when hovering */
     color: cyan !important; /* Cyan text color for links when hovering */
-} /* Adds black background, black font, and black border when hovering over <a> elements */
+} /* Adds dark red background and cyan text when hovering over <a> elements */
 
 a:visited {
     color: #660066; /* Sets a slightly dark purple color for visited links */
@@ -257,7 +257,6 @@ header {
     grid-column: span 3; /* Headers span 3 columns */
 } /* Made <h3> elements within the ".main.supporting" classes take 3 columns */
 
-
 ::selection {
     background: rgba(0, 127.5, 0, 0.5); /* Applies a semi-transparent dark green background to selected text */
 } /* Defines a semi-transparent dark green color for selected text elements */
@@ -268,7 +267,7 @@ h1::selection {
 
 h2::selection {
     background:rgba(0, 0, 127.5, 0.5); /* Applies a semi-transparent dark blue background to selected <h2> text */
-} /* Defines a semi-transparent dark green color for selected <h2> text */
+} /* Defines a semi-transparent dark blue color for selected <h2> text */
 
 h3::selection {
     background: hsla(0, 100%, 25%, 0.5); /* Applies a 50% transparent dark red background to selected <h3> text */
