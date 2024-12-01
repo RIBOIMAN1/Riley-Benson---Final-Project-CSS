@@ -34,7 +34,6 @@ h3 {
 ul {
     list-style-type: none; /* Removes bullet points */
     margin-left: 20px; /* Gives a left margin (gap) of 20px */
-    margin-bottom: 12px; /* Gives a bottom margin (gap) of 12px */
 } /* Defines no list type and margins for unordered list */
 
 ul li {
@@ -65,3 +64,15 @@ p {
 header {
     text-align: center; /* Aligns text to the center */
 } /* Center aligns text that is part of the <header> element */
+
+ul > li:last-child {
+    margin-bottom: 12px; /* Gives a bottom margin (gap) of 12px */
+} /* Applies margin adjustment for the last list item */
+
+h1:first-of-type {
+    margin-top: 0; /* Removes top margining for the first <h1> element on the page */
+} /* Makes the first <h1> element start at the top of the container */
+
+p + a {
+    margin-top: 10px; /* Gives a top margin (gap) of 10px */
+} /* Adds a small amount of spacing between text and links */
