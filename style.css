@@ -73,7 +73,3 @@ ul > li:last-child {
 h1:first-of-type {
     margin-top: 0; /* Removes top margining for the first <h1> element on the page */
 } /* Makes the first <h1> element start at the top of the container */
-
-p + a {
-    margin-top: 10px; /* Gives a top margin (gap) of 10px */
-} /* Adds a small amount of spacing between text and links */
