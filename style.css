@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); /* Google fonts import link to the Ubuntu font */
 body, h1, h2, ul, li, a {
     margin: 0; /* Removes the default margining from the page */
     padding: 0; /* Removes the default padding from the page */

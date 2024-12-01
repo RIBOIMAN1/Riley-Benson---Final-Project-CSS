@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap'); /* Google fonts import link to the Ubuntu font */
 body, h1, h2, ul, li, a {
     margin: 0; /* Removes the default margining from the page */
     padding: 0; /* Removes the default padding from the page */
-    font-family: "Ubuntu", sans-serif, Arial, Helvetica /* Font families for the webpage */
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif; /* Font families for the webpage */
 } /* Removes default margining and padding and sets the font families for the webpage, applying to <body>, <h1>, <h2>, <ul>, <li>, and <a> elements */
 
 body {
